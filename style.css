@@ -1,0 +1,569 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    /* width: 100%; */
+    width: 425px;
+    height: 40px;
+    /* column-gap: 50%; */
+    z-index: 99;
+
+    display: none;
+}
+
+.mobile p a, .mobile ul li a {
+    text-decoration: none;
+    padding: 11px 12px;
+    color: white;
+}
+
+.mobile p {
+    padding-top: 10px;
+}
+
+.mobile ul .drop {
+    position: relative;
+}
+
+.mobile ul .drop .dropbt{
+    position: absolute;
+    right: 15px;
+    top: -25px;
+}
+
+.mobile ul .drop .drop-content {
+    display: none;
+    position: absolute;
+    padding-top: 5px;
+    right: 0;
+}
+
+.mobile ul .drop:hover .drop-content {
+    display: block;
+}
+
+.mobile ul .drop .drop-content a {
+    display: block;
+    background-color: black;
+    width: 395px;
+    padding: 8px 16px;
+}
+
+.mobile ul .drop .drop-content a:hover {
+    background-color: gainsboro;
+    color:  black;
+}
+
+
+
+
+
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    z-index: 99;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 11px 12px;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+nav ul .dropdown {
+    position: relative;
+}
+
+nav ul .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 28px;
+}
+
+nav ul .dropdown:hover  .dropbtn{
+    background-color: #ddd;
+    color: black;
+}
+
+nav ul .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav ul .dropdown .dropdown-content a{
+    display: block;
+    color: black;
+    padding: 8px 16px;
+}
+
+nav p {
+    padding: 11px 16px;
+    cursor: pointer;
+    color: white;
+}
+
+nav p:hover {
+    background-color: red;
+}
+
+.banner {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 40px;
+}
+
+.banner .txt {
+    position: absolute;
+    bottom: 30px;
+    color: white;
+    text-align: center;
+}
+
+.banner .txt .title {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+
+.banner .txt .mid{
+    font-weight: bold;
+}
+
+.band {
+    padding: 100px 21%;
+}
+
+.band .title {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.band .mid {
+    text-align: center;
+    padding: 20px 0;
+    color: grey;
+}
+
+.band .text {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.band .names {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 13%;
+    padding-top: 30px;
+}
+
+.band .names .name p {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.band .names .name img {
+    width: 150px;
+    border-radius: 4px;
+}
+
+.tour {
+    padding: 100px 21%;
+    background-color: rgb(0, 0, 0);
+}
+
+.tour .title {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+}
+
+.tour .mid {
+    text-align: center;
+    padding: 20px 0;
+    color: grey;
+}
+
+.tour .dates {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 0;
+}
+
+.tour .dates p {
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.151);
+    width:100%;
+}
+
+.tour .dates p span {
+    background-color: rgba(255, 0, 0, 0.849);
+    padding: 4px 7px;
+    margin-left: 15px;
+    color: white;
+}
+
+.tour .dates p .last {
+    float: right;
+    border-radius:100% ;
+    background-color: black;
+    padding: 3px 7px;
+    font-size: 13px;
+}
+
+.tour .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.tour .cards .card {
+    width: 300px;
+}
+
+.tour .cards .card .img {
+    width: 260px;
+}
+
+.tour .cards .card .img img {
+    width: 100%;
+    opacity: 1;
+}
+
+.tour .cards .card .img img:hover {
+    opacity: .7;
+}
+
+.tour .cards .card .txt {
+    background-color: white;
+    margin-top: -3px;
+    padding: 15px;
+}
+
+.tour .cards .card .txt .head {
+   font-weight: 700;
+}
+
+.tour .cards .card .txt .neck {
+    color: rgba(0, 0, 0, 0.644);
+    padding: 15px 0;
+}
+
+.tour .cards .card .txt button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 15px;
+}
+
+.contact {
+    padding: 100px 21%;
+}
+
+.contact .title {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.contact .mid {
+    text-align: center;
+    padding: 20px 0;
+    color: grey;
+}
+
+.contact .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    column-gap: 15%;
+}
+
+.contact .content .left p{
+    padding: 5px 0;
+}
+
+.contact .content .left span {
+    margin-left: 15px;
+    font-weight: 400;
+}
+
+
+.contact .content .right form input {
+    width: 40%;
+    height: 40px;
+    text-indent: 5px;
+}
+
+.contact .content .right form .msg {
+    width: 82%;
+    margin-top: 15px;
+}
+
+.contact .content .right form button {
+    float: right;
+    margin: 10px 80px 0 0;
+    padding: 8px 15px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+footer {
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer button {
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+footer button a {
+    color: white;
+}
+
+footer .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0 8px;
+    padding-bottom: 20px;
+}
+
+footer .icons p {
+    font-size: 19px;
+}
+
+footer .icons p:hover {
+    opacity: .6;
+}
+
+footer p a {
+    color: black;
+}
+
+footer p a:hover {
+    color: green;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+
+    .band {
+        padding: 100px 2%;
+    }
+    
+    .band .text {
+        font-size: 13px;
+    }
+    
+    .band .names {
+        column-gap: 5%;
+    }
+    
+
+    
+    .tour {
+        padding: 100px 2%;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .tour .dates {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 30px 0;
+        width: 98%;
+    }
+
+    .tour .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 12px;
+    }
+
+    .tour .cards .card {
+        width: 200px;
+    }
+
+    .tour .cards .card .img {
+        width: 200px;
+    }
+
+    .tour .cards .card .txt .head {
+    font-size: 12px;
+    }
+
+    .tour .cards .card .txt .neck, .tour .cards .card .txt .pr {
+        font-size: 10px;
+    }
+
+    .tour .cards .card .txt button {
+        font-size: 12px ;
+    }
+
+    .contact {
+        padding: 100px 2%;
+    }
+
+    .contact .content {
+        column-gap: 15%;
+    }
+
+    .contact .content .left {
+        width: 300px;
+    }
+
+
+    .contact .content .right form input {
+        width: 40%;
+        height: 35px;
+        border: .1px solid rgba(0, 0, 0, 0.568);
+    }
+
+    .contact .content .right form .msg {
+        width: 82%;
+        margin-top: 15px;
+    }
+
+    .contact .content .right form button {
+        float: right;
+        margin: 10px 70px 0 0;
+    }
+       
+}
+
+
+
+@media screen and (max-width:425px) {
+    nav {
+        display: none;
+    }  
+
+    .mobile{
+        display: block;
+    }
+
+    .band {
+        padding: 100px 5%;
+    }
+
+    .band .names {
+        flex-direction: column;
+        row-gap:20px;
+    }
+    
+    .band .names .name img {
+        width: 250px;
+    }
+
+    .tour {
+        padding: 100px 5%;
+    }
+    
+    .tour .dates {
+        padding: 30px 4% 30px 0;
+    }
+    
+    .tour .cards {
+        display: flex;        
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    
+    .tour .cards .card {
+        width: 100%;
+    }
+    
+    .tour .cards .card .img {
+        width: 100%;
+    }
+
+
+    .contact {
+        padding: 100px 5%;
+    }
+    
+    .contact .content {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .contact .content .right form input {
+        width: 100%;
+    }
+    
+    .contact .content .right form .msg {
+        width: 100%;
+    }
+    
+    .contact .content .right form button {        margin: 10px 0px 0 0;
+        padding: 8px 18px;
+    }
+    
+   
+}
+
+
+
+
+

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Band</title>
+</head>
+<body>
+    <div class="mobile">
+        <p><a href="#home">HOME</a></p>
+        <ul>
+            <li class="drop">
+                <a href="" class="dropbt"><i class="fa-solid fa-bars"></i></a>
+                <div class="drop-content">
+                    <a href="">BAND</a>
+                    <a href="">TOUR</a>
+                    <a href="">CONTACT</a>
+                    <a href="">MERCH</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#band">BAND</a></li>
+            <li><a href="#tour">TOUR</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">MORE <i class="fa-solid fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">Merchandise</a>
+                    <a href="#">Extras</a>
+                    <a href="#">Media</a>
+                </div>
+            </li>
+        </ul>
+        <p><i class="fa-solid fa-magnifying-glass"></i></p>
+    </nav>
+    <div id="home"></div>
+    <div class="banner">
+        <img src="img/chicago.jpg" alt="" width="100%">
+        <div class="txt">
+            <p class="title">Chicago</p>
+            <p class="mid">Thank you, Chicago - A night we won't forget.</p>
+        </div>
+    </div>
+
+    <div class="band" id="band">
+        <p class="title">THE BAND</p>
+        <p class="mid"><i>We love music</i></p>
+        <p class="text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        <div class="names">
+            <div class="name">
+                <p>Name</p>
+                <img src="img/bandmember.jpg" alt="">
+            </div>
+            <div class="name">
+                <p>Name</p>
+                <img src="img/bandmember.jpg" alt="">
+            </div>
+            <div class="name">
+                <p>Name</p>
+                <img src="img/bandmember.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="tour" id="tour">
+        <p class="title">TOUR DATES</p>
+        <p class="mid"><i>Remember to book your tickets!</i></p>
+        <div class="dates">
+            <p>September <span>Sold out</span></p>
+            <p>October <span>Sold out</span></p>
+            <p>November <span class="last">3</span></p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="img"><img src="img/newyork.jpg" alt=""></div>
+                <div class="txt">
+                    <p class="head">New York</p>
+                    <p class="neck">Fri 27 Nov 2024</p>
+                    <p class="pr">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button>Buy Tickets</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="img/paris.jpg" alt=""></div>
+                <div class="txt">
+                    <p class="head">Paris</p>
+                    <p class="neck">Sat 28 Nov 2024</p>
+                    <p class="pr">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button>Buy Tickets</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="img/sanfran.jpg" alt=""></div>
+                <div class="txt">
+                    <p class="head">San Francisco</p>
+                    <p class="neck">Sun 29 Nov 2024</p>
+                    <p class="pr">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button>Buy Tickets</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <p class="title">CONTACT</p>
+        <p class="mid"><i>Fan? Drop a note!</i></p>
+        <div class="content">
+            <div class="left">
+                <p><i class="fa-solid fa-location-dot"></i> <span>Chicago, US</span></p>
+                <p><i class="fa-solid fa-phone"></i> <span> Phone: +00 151515</span></p>
+                <p><i class="fa-solid fa-envelope"></i> <span>Email: mail@mail.com</span></p>
+            </div>
+            <div class="right">
+                <form action="" autocomplete="on">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input class="msg" type="text" placeholder="Message"> <br>
+                    <button>SEND</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="map">
+        <img src="img/map.jpg" alt="" width="100%"></div>
+    <footer>
+        <button><a href="#home"><i class="fa-solid fa-arrow-up fa-beat-fade"></i></a></button>
+        <div class="icons">
+            <p><i class="fa-brands fa-facebook"></i></p>
+            <p><i class="fa-brands fa-instagram"></i></p>
+            <p><i class="fa-brands fa-snapchat"></i></p>
+            <p><i class="fa-brands fa-pinterest"></i></p>
+            <p><i class="fa-brands fa-twitter"></i></p>
+            <p><i class="fa-brands fa-linkedin"></i></p>
+        </div>
+        <p>Powered by <a href="#">Tiger.com</a></p>
+    </footer>
+</body>
+</html>
